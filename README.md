@@ -1,0 +1,2 @@
+# QAR
+Quantile autoRegression
