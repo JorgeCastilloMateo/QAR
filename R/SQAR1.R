@@ -319,7 +319,7 @@ SGPQAR1K1 <- function(Y, coords,
   
   # burn-in
   if (n.burnin < 1000) n.burnin <- 1000
-  for (b in 10001:(10000 + n.burnin)) {
+  for (b in 100001:(100000 + n.burnin)) {
     params <- rwBmetropolisSGPQAR1K1(params, sd * (Sigma[[2]] + I), T, L, n, Y, R.phi, Rinv, Id, prior, tol)
     
     Sigma <- MuSigmaUpdate(params[-d1], Sigma[[1]], Sigma[[2]], b - 99500)
